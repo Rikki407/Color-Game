@@ -1,0 +1,55 @@
+
+html,body{
+    background-color: #232323;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+h2{
+    margin: 0;
+}
+h1{
+    font-size: 3em;
+    margin: 5px;
+}
+#heading{
+   background-color: #247BA0;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+#action-container{
+    background-color: white;
+}
+#actions{
+    color: #247BA0;
+    padding: 5px;
+}
+#container,#actions{
+    max-width: 600px;
+    margin: 0 auto;
+}
+#container{
+    margin-top: 30px;
+}
+.colorPalets{
+  background-color: purple;
+    padding-bottom: 30%;
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 10px;
+}
+h4{
+    margin: 0;
+}
+
+.newColor,.level{
+    display: inline-block;
+}
+.newColor{
+    margin-right: 64%;
+}
+.level{
+    margin: 0 2px;
+}
