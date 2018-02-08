@@ -33,7 +33,6 @@ h1{
     margin-top: 30px;
 }
 .colorPalets{
-  background-color: purple;
     padding-bottom: 30%;
     width: 30%;
     float: left;
@@ -46,6 +45,10 @@ h4{
 
 .newColor,.level{
     display: inline-block;
+}
+.newColor :hover,.level :hover{
+    background-color: #247BA0;
+    color: white;
 }
 .newColor{
     margin-right: 64%;
