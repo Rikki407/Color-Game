@@ -2,11 +2,11 @@ var colorPalets = document.getElementsByClassName("colorPalets");
 var newColors = document.querySelector(".newColor");
 var ans;
 var ans_pos ;
-
+var question = document.querySelector("#question");
 function changePalets () {
     ans  = "rgb("+(Math.floor(Math.random()*256))+", "+(Math.floor(Math.random()*256))+", "+(Math.floor(Math.random()*256))+")";
+    question.textContent = ans;
     ans_pos = Math.floor(Math.random()*6);
-    console.log("Function called");
     for(var i=0;i<colorPalets.length;i++)
     {
         if(i===ans_pos){
@@ -19,5 +19,13 @@ function changePalets () {
 }
 
 changePalets();
-
+for(var i=0;i<colorPalets.length;i++)
+{
+    colorPalets[i].addEventListener('click',function () {
+        if(ans === this.style.backgroundColor)
+        {
+            console.log("You Found it!!!!");
+        }
+    })
+}
 newColors.addEventListener("click",changePalets);
