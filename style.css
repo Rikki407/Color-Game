@@ -23,7 +23,8 @@ h1{
 }
 #actions{
     color: #247BA0;
-    padding: 5px;
+    background-color: white;
+    padding-bottom: 19px;
 }
 #container,#actions{
     max-width: 600px;
@@ -39,21 +40,26 @@ h1{
     margin: 1.66%;
     border-radius: 20px;
 }
+.gen_info{
+    width: 30%;
+    float: left;
+    margin: 0 1.66%;
+}
 h4{
     margin: 0;
 }
 
-.newColor,.level,#hard,#easy{
-    display: inline-block;
-}
 .newColor :hover,.level :hover{
     background-color: #247BA0;
     color: white;
 }
-.newColor{
-    margin-right: 60%;
+
+.correct{
+    color: #232323;
+    text-align: center;
+    visibility: hidden;
 }
 .level{
-    margin: 0 2px;
+    text-align: end;
 }
 
