@@ -37,13 +37,13 @@ h1{
     width: 30%;
     float: left;
     margin: 1.66%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 h4{
     margin: 0;
 }
 
-.newColor,.level{
+.newColor,.level,#hard,#easy{
     display: inline-block;
 }
 .newColor :hover,.level :hover{
@@ -51,8 +51,9 @@ h4{
     color: white;
 }
 .newColor{
-    margin-right: 61g%;
+    margin-right: 60%;
 }
 .level{
     margin: 0 2px;
 }
+
