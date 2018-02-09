@@ -42,3 +42,29 @@ for(var i=0;i<colorPalets.length;i++)
     })
 }
 newColors.addEventListener("click",changePalets);
+
+document.querySelector("#easy").addEventListener("click",function () {
+    for(var i=3;i<colorPalets.length;i++) {
+        colorPalets[i].style.display = "none";
+    }
+    ans  = "rgb("+(Math.floor(Math.random()*256))+", "+(Math.floor(Math.random()*256))+", "+(Math.floor(Math.random()*256))+")";
+    question.textContent = ans;
+    ans_pos = Math.floor(Math.random()*3);
+    document.querySelector(".correct").style.visibility = "hidden";
+    for(var j=0;j<3;j++)
+    {
+        if(j===ans_pos){
+            colorPalets[j].style.backgroundColor = ans;
+        }
+        else {
+            colorPalets[j].style.backgroundColor = "rgb(" + (Math.floor(Math.random() * 256)) + ", " + (Math.floor(Math.random() * 256)) + ", " + (Math.floor(Math.random() * 256)) + ")";
+        }
+    }
+});
+
+document.querySelector("#hard").addEventListener("click",function () {
+    for(var i=3;i<colorPalets.length;i++) {
+        colorPalets[i].style.display = "inline";
+    }
+    changePalets();
+});
